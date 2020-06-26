@@ -6,7 +6,7 @@ const getCoverPhoto = (key, name) => `${COVERPHOTO}/${key}/${name}`;
 const ANIMELIST = [
     {
         name: "FairyTail",
-        key: "119",
+        key: 119,
         coverImage: getCoverPhoto(119, "original.jpeg"),
         maxEpisodes: 175,
         server: "auengine",
@@ -14,7 +14,7 @@ const ANIMELIST = [
     },
     {
         name: "FairyTail (2014)",
-        key: "120",
+        key: 120,
         coverImage: getCoverPhoto(120, "Phr4bCBebQvgOoXK1Rv9qPfZOYKMkqHlQD414mAn.jpeg"),
         maxEpisodes: 102,
         server: "auengine",
@@ -22,7 +22,7 @@ const ANIMELIST = [
     },
     {
         name: "Weathering With You",
-        key: "2570",
+        key: 2570,
         coverImage: getCoverPhoto(2570, "hGGBSUn2uQiHwJesPzHaFvbs6uOywht2DZWz8O7k.jpeg"),
         maxEpisodes: 1,
         server: "auengine",
@@ -35,5 +35,13 @@ const ANIMELIST = [
         maxEpisodes: 220,
         server: "auengine",
         source: (episodeNo) => `${AUENGINE}/118/sub/${episodeNo}_${10848 + episodeNo}.mp4`,
+    },
+    {
+        name: "Naruto: Shippuuden",
+        key: 117,
+        coverImage: getCoverPhoto(117, "original.jpeg"),
+        maxEpisodes: 500,
+        server: "auengine",
+        source: (episodeNo) => `${AUENGINE}/117/sub/${episodeNo}_${2654 + episodeNo}.mp4`,
     },
 ];
